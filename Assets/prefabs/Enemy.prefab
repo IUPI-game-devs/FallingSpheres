@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5224740421439234704}
   - component: {fileID: 8856404896126781265}
+  - component: {fileID: 8930929541742713118}
   m_Layer: 0
   m_Name: IA
   m_TagString: Untagged
@@ -50,9 +51,22 @@ MonoBehaviour:
   objectsLayer:
     serializedVersion: 2
     m_Bits: 64
-  distance: 5
+  distance: 7
   angle: 45
   detectedObject: {fileID: 0}
+--- !u!114 &8930929541742713118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8602526339846047654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5e4169ccdc50d47925b94c3b72efe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
 --- !u!1 &8760147570832550593
 GameObject:
   m_ObjectHideFlags: 0
