@@ -55,6 +55,8 @@ We created a base using the Sci-Fi styled assets from the Unity Asset Store.
 - The corner walls connect and fill in the gaps between side walls.
 - The base game object acts as a template that is invisible to the player.
 
+![Base Layout](./images/Base-layout.png)
+
 For the lose and win screen we used a combination of generative AI. We tried to use the Dalle-2 for the images and StableDiffusionXL. 
 
 
