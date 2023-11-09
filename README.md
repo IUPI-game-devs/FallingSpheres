@@ -57,6 +57,8 @@ We created a base using the Sci-Fi styled assets from the Unity Asset Store.
 
 ![Base Layout](./Images/Base-layout.png)
 
+![Base Layout](./Images/Base-layout_angle.png)
+
 For the lose and win screen we used a combination of generative AI. We tried to use the Dalle-2 for the images and StableDiffusionXL. 
 
 
