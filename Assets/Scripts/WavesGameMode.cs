@@ -10,7 +10,7 @@ public class WavesGameMode : MonoBehaviour
     [SerializeField] public Life playerBaseLife;
     void Start(){    
         playerLife.onDeath.AddListener(OnPlayerOrBaseDied);
-        playerBaseLife.onDeath.AddListener(OnPlayerOrBaseDied);
+        //playerBaseLife.onDeath.AddListener(OnPlayerOrBaseDied);
         EnemyManager.instance.onChanged.AddListener(CheckWinConditions);
         WaveManager.instance.onChanged.AddListener(CheckWinConditions);
     }
