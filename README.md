@@ -57,4 +57,68 @@ We created a base using the Sci-Fi styled assets from the Unity Asset Store.
 
 For the lose and win screen we used a combination of generative AI. We tried to use the Dalle-2 for the images and StableDiffusionXL. 
 
+### Code and Logic
 
+**Managers**
+
+FloorManager.cs
+```csharp
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class FloorManager : MonoBehaviour
+{
+    public static FloorManager instance;
+    public List<Floor> floors;
+    public UnityEvent onChanged;
+    
+    void Awake(){
+        if(instance == null){
+            instance = this;
+        }
+        else{
+            Debug.LogError("Duplicated Floor Manager",gameObject);
+        }
+    }
+
+    public void AddFloor(Floor floor){
+        floors.Add(floor);
+        onChanged.Invoke();
+    }
+
+    public void RemoveFloor(Floor floor){
+        //delethe the gamobject as well random floor.
+        Destroy(floor.gameObject);
+        floors.Remove(floor);
+        onChanged.Invoke();
+    }
+}
+```
+
+
+Floor.cs
+```csharp
+using System.Collections;
+
+using System.Collections.Generic;
+
+using UnityEngine;
+
+  
+
+public class Floor : MonoBehaviour
+
+{
+
+//if wall has been hit, destroy random floor.
+
+public void Start(){
+
+FloorManager.instance.AddFloor(this);
+
+}
+
+}
+```
