@@ -1,5 +1,13 @@
 # Project 06 - Falling Spheres
 
+### Temas Incorporados:
+- Manipulación de Primitivos y Compuestos
+- Jerarquías, clonaciones y prefabricados
+- Colisionadores (colliders)
+- Programación por eventos
+- Recreación de personajes (spawning)
+- Física de los objetos
+
 ## Description
 
 The game consists of a player shooting enemies while trying to avoid falling through a collapsing floor. Hitting walls causes the floor tiles to disappear. The player wins by destroying all enemies and loses by falling through the floor or running out of health.
